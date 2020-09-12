@@ -1,29 +1,29 @@
 翻譯自https://github.com/SkriptLang/Skript/tree/master/docs
-# Skript Documentation Templates
+# Skript文件模板
 
-Skript's features are documented directly in it's Java code. But we still need
+Skripts功能直接記錄在其Java代碼中。 但是我們仍然需要
 
-1. HTML, CSS and (possible) Javascript code to create website out of these
-2. Clear tutorials, not just "you can check the syntax pattern"
-3. Examples explained, if needed
+1. HTML CSS和（可能的）Javascript代碼從這些創建網站
+2. 清楚的教學，而不僅僅是“您可以檢查語法模式”
+3. 舉例說明，如果需要
 
-When generating final result, each HTML file is surrounded by template.html,
-which provides head element, navigation bar and so on.
+生成最終結果時，每個HTML文件都被template.html包圍，
+它提供head元素，導航欄等。
 
-## Template Patterns
+## 模板圖案
 
-Patterns have syntax of ${pattern_here}. For example, ${skript.version} is replaced with
-current Skript version. Please see below for more...
+模式的語法為 ${pattern_here}. 例如, ${skript.version} 被替換為
+當前的Skript版本。 請參閱下面的更多信息...
 
-You can also include other files by using ${include <filename>}. Just please make
-sure that those included files don't have tags which are not allowed in position
-where include is called.
+您還可以通過使用其他文件 ${include <filename>}. 請做
+確保這些包含的文件沒有位置不允許的標籤
+哪裡包括稱為.
 
-## Pattern Reference
+## 模式參考
 ```
-skript.* - Information of Skript
-version - Skript's version
-include <filename> - Load given file and place them here
-generate <expressions/effects/events/types/functions> <loop template file> - Generated reference
-content - In template.html, marks the point where other file is placed
+skript.* - Skript訊息
+version - Skript 版本
+include <filename> - 讀取指定文件並將其放在此處
+generate <expressions/effects/events/types/functions> <loop template file> - 產生參考
+content - 在template.html中，標記放置其他文件的位置
 ```
